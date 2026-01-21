@@ -5,13 +5,13 @@
   let expanded = $state<string | null>(null);
 </script>
 
-<div class="bg-neutral-700 h-screen min-w-screen flex justify-center px-6 py-10">
+<div class="bg-neutral-700 min-h-[100dvh] min-h-screen min-w-screen flex justify-center px-4 py-4 sm:px-6 sm:py-6">
   <div class="flex flex-col justify-between w-full max-w-[400px] text-neutral-200 text-center">
-    <div class="pt-[10vh]">
+    <div class="pt-[4vh] sm:pt-[6vh]">
 
 # DEVIN LIU
 
-<div class="flex flex-col gap-4 pt-20">
+<div class="flex flex-col gap-4 pt-8 sm:pt-10">
 
 <Expandable name="STANG HACKS" time="NOW" bind:expanded>
 
