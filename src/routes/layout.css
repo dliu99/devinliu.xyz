@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@font-face {
+  font-family: 'Departure Mono';
+  src: url('/DepartureMono-Regular.woff2') format('woff2'),
+       url('/DepartureMono-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Departure Mono', monospace;
+}
