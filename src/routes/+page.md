@@ -1,16 +1,22 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import Expandable from '../components/Expandable.svelte';
-  const data = fetch('https://api.github.com/repos/dliu99/devinliu.xyz/commits?per_page=1')
-  .then((r) => r.json())
+  let data = $state<Promise<any> | null>(null);
   let expanded = $state<string | null>(null);
+  onMount(() => {
+    data = fetch('https://api.github.com/repos/dliu99/devinliu.xyz/commits?per_page=1')
+      .then((r) => r.json());
+  });
 </script>
 
-<div class="bg-slate-800 min-h-screen min-w-screen flex justify-center px-4 py-4 sm:px-6 sm:py-4">
+<div class="bg-slate-800 min-h-dvh min-w-screen flex justify-center px-4 pt-4 pb-[calc(1rem+env(safe-area-inset-bottom))] sm:px-6 sm:pt-4">
   <div class="flex flex-col justify-between w-full max-w-[400px] text-neutral-200 text-center">
     <div class="pt-[4vh] sm:pt-[6vh]">
+<div class="font-black">
 
 # DEVIN LIU
 
+</div>
 <div class="flex flex-col gap-4 pt-8 sm:pt-10">
 
 <Expandable name="STANG HACKS" time="NOW" bind:expanded>
@@ -49,11 +55,13 @@ Before getting banned off TikTok Shop, I was doing **$3k/m**, worked with massiv
 </div>
     </div>
 
-<div class="text-sm pb-[env(safe-area-inset-bottom)]">
+<div class="text-xs">
+{#if data}
 {#await data then commits}
   {@const d = new Date(commits[0].commit.committer.date)}
   UPDATED {d.toLocaleString('en-AU', { day: 'numeric', month: 'short', year: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/Los_Angeles' }).toUpperCase()} PT
 {/await}
+{/if}
 {#snippet link(href: string, label: string)}
 <a {href} target="_blank" rel="noopener noreferrer" class="hover:underline">[{label}]</a>
 {/snippet}
