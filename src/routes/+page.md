@@ -5,7 +5,7 @@
   let expanded = $state<string | null>(null);
 </script>
 
-<div class="bg-slate-800 min-h-[100dvh] min-h-screen min-w-screen flex justify-center px-4 py-4 sm:px-6 sm:py-6">
+<div class="bg-slate-800 min-h-screen min-w-screen flex justify-center px-4 py-4 sm:px-6 sm:py-4">
   <div class="flex flex-col justify-between w-full max-w-[400px] text-neutral-200 text-center">
     <div class="pt-[4vh] sm:pt-[6vh]">
 
