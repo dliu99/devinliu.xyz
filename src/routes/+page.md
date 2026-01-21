@@ -5,7 +5,7 @@
   let expanded = $state<string | null>(null);
 </script>
 
-<div class="bg-neutral-700 min-h-[100dvh] min-h-screen min-w-screen flex justify-center px-4 py-4 sm:px-6 sm:py-6">
+<div class="bg-slate-800 min-h-[100dvh] min-h-screen min-w-screen flex justify-center px-4 py-4 sm:px-6 sm:py-6">
   <div class="flex flex-col justify-between w-full max-w-[400px] text-neutral-200 text-center">
     <div class="pt-[4vh] sm:pt-[6vh]">
 
@@ -25,7 +25,7 @@ I've won at 5/7 hackathons in/around SF. Some favorites are:
 
 <div class="text-xs">
 
-- Lindy x E2B x Anthropic AI Agents Hackathon - **I won 1st/$2000** and built an agent using E2B Computer Use to scrape FB Marketplace for deals and **lowball the seller based on the their job title on LinkedIn**
+- Lindy x E2B x Anthropic AI Agents Hackathon - I built an agent using E2B Computer Use to scrape FB Marketplace for deals and **lowball the seller based on the their job title on LinkedIn**. Won 1st Place/$2000.
 - [Cal Hacks '25](https://devpost.com/software/dialsense) - MCP server for Poke, allowing you to make calls using your cloned voice and schedule appointments with just a text
 
 </div>
@@ -49,7 +49,7 @@ Before getting banned off TikTok Shop, I was doing **$3k/m**, worked with massiv
 </div>
     </div>
 
-<div class="text-sm">
+<div class="text-sm pb-[env(safe-area-inset-bottom)]">
 {#await data then commits}
   {@const d = new Date(commits[0].commit.committer.date)}
   UPDATED {d.toLocaleString('en-AU', { day: 'numeric', month: 'short', year: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/Los_Angeles' }).toUpperCase()} PT
