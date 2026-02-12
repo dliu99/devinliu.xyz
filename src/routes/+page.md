@@ -18,6 +18,11 @@
 
 </div>
 <div class="flex flex-col gap-4 pt-8 sm:pt-10">
+<Expandable name="GRADECOW" time="NOW" bind:expanded>
+
+I built an **[app](https://github.com/dliu99/gradecow-app)** reverse engineering my school's LMS (infinite campus). Awaiting App Store approval...
+
+</Expandable>
 
 <Expandable name="STANG HACKS" time="NOW" bind:expanded>
 
@@ -46,9 +51,9 @@ I ran a meme page on TikTok with a team of 3. It made **$6k/m** at peak scale, w
 
 <Expandable name="TIKTOK SHOP" time="2023" bind:expanded>
 
-I was running a lot of oddball dropshipping stores on Shopify/Etsy/TikTok Shop since I was 13 with varying levels of profitability.
+I ran some oddball dropshipping stores on Shopify/Etsy/TikTok Shop since I was 13 with varying levels of profitability.
 
-Before getting banned off TikTok Shop, I was doing **$3k/m**, worked with massive affiliates in the space, and **built+sold a tool** automating outreach to affiliates via TikTok's internal API.
+Before getting banned off TikTok Shop, I was doing **$3k/m**, worked with massive affiliates in the space, and **built+sold a CLI tool in Python** automating outreach to affiliates via TikTok's internal API.
 
 </Expandable>
 
