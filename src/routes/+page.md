@@ -20,7 +20,7 @@
 <div class="flex flex-col gap-4 pt-8 sm:pt-10">
 <Expandable name="GRADECOW" time="NOW" bind:expanded>
 
-I built an **[app](https://github.com/dliu99/gradecow-app)** reverse engineering my school's LMS (infinite campus). Awaiting App Store approval...
+I reverse engineered my school's LMS (infinite campus) since there's no publicly available API or auth and built a **[React Native app](https://github.com/dliu99/gradecow-app)** around it. Awaiting App Store approval...
 
 </Expandable>
 
@@ -36,8 +36,8 @@ I've won at 5/7 hackathons in/around SF. Some favorites are:
 
 <div class="text-xs">
 
-- Lindy x E2B x Anthropic AI Agents Hackathon - I built an agent using E2B Computer Use to scrape FB Marketplace for deals and **lowball the seller based on the their job title on LinkedIn**. Won 1st Place/$2000.
-- [Cal Hacks '25](https://devpost.com/software/dialsense) - MCP server for Poke, allowing you to make calls using your cloned voice and schedule appointments with just a text
+- Lindy x E2B x Anthropic AI Agents Hackathon - I built an agent using Claude 4.5 Sonnet and E2B Computer Use to scrape FB Marketplace for deals and **lowball the seller based on the their job title on LinkedIn**. Won 1st Place/$2000.
+- [Cal Hacks '25](https://devpost.com/software/dialsense) - MCP server for Poke, allowing you to make calls using a cloned AI voice and schedule appointments with just a text
 
 </div>
 
@@ -45,7 +45,7 @@ I've won at 5/7 hackathons in/around SF. Some favorites are:
 
 <Expandable name="TIKTOK CPB" time="2024" bind:expanded>
 
-I ran a meme page on TikTok with a team of 3. It made **$6k/m** at peak scale, when we'd produce 2 videos/day (1-3min. videos on avg). I reached **20 million views** / **10k followers** in \<3 months
+I ran a meme page on TikTok with a team of 3. It made **$6k/m** at peak scale, when we'd produce 2 videos/day (1-3min. videos on avg). I reached **20 million views** / **10k followers** in \<3 months.
 
 </Expandable>
 
@@ -57,6 +57,11 @@ Before getting banned off TikTok Shop, I was doing **$3k/m**, worked with massiv
 
 </Expandable>
 
+<Expandable name="DISCORD BOTS" time="2021" bind:expanded>
+
+My first project, a [discord bot](https://files.catbox.moe/smyfx9.png) reaching ~550 servers and 15,000 users.
+
+</Expandable>
 </div>
     </div>
 
