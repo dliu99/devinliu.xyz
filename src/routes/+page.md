@@ -81,6 +81,7 @@ My first project, a [discord bot](https://files.catbox.moe/smyfx9.png) reaching 
 I'm 17, from Monte Vista High School in Danville, CA. 
 
 {@render link('mailto:devin78988@gmail.com?subject="Yo"', 'email')}
+{@render link('https://drive.google.com/file/d/1Cx8HyMquZUT6k-UqQgiX_r6jB0y1GLRr/view?usp=sharing', 'resume')}
 {@render link('https://github.com/dliu99', 'github')}
 {@render link('https://www.linkedin.com/in/devin-liu-6aa1b9325/', 'linkedin')}
 {@render link('https://instagram.com/devin78988', 'ig')}
