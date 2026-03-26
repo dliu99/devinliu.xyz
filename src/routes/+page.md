@@ -3,9 +3,13 @@
   import Expandable from '../components/Expandable.svelte';
   let data = $state<Promise<any> | null>(null);
   let expanded = $state<string | null>(null);
+  const age = ((d,t=new Date()) => t.getFullYear()-d.getFullYear()-(t.getMonth()<d.getMonth()||(t.getMonth()===d.getMonth()&&t.getDate()<d.getDate())))(new Date("2008-03-21"));
+
   onMount(() => {
+    
     data = fetch('https://api.github.com/repos/dliu99/devinliu.xyz/commits?per_page=1')
       .then((r) => r.json());
+    
   });
 </script>
 
@@ -20,15 +24,11 @@
 <div class="flex flex-col gap-4 pt-8 sm:pt-10">
 <Expandable name="GRADECOW" time="NOW" bind:expanded>
 
-I reverse engineered my school's LMS (infinite campus) since there's no publicly available API or auth and built a **[React Native app](https://github.com/dliu99/gradecow-app)** around it. Awaiting App Store approval...
+I reverse engineered my school's LMS (infinite campus) since there's no publicly available API or persistent auth and built a **[React Native app](https://github.com/dliu99/gradecow-app)** around it. Awaiting App Store approval...
 
 </Expandable>
 
-<Expandable name="STANG HACKS" time="NOW" bind:expanded>
 
-I founded my **[school's first hackathon](https://stanghacks.com)** with 300+ participants and sponsors including Vercel, Cerebras, Vapi, and more.
-
-</Expandable>
 
 <Expandable name="HACKATHONS" time="NOW" bind:expanded>
 
@@ -42,7 +42,11 @@ I've won at 5/7 hackathons in/around SF. Some favorites are:
 </div>
 
 </Expandable>
+<Expandable name="STANG HACKS" time="2026" bind:expanded>
 
+I founded my **[school's first hackathon](https://stanghacks.com)** with ~200 participants/456 signups, $1.5k cash prizes, and sponsors including Vercel, ElevenLabs, Vapi, and more.
+
+</Expandable>
 <Expandable name="TIKTOK CPB" time="2024" bind:expanded>
 
 I ran a meme page on TikTok with a team of 3. It made **$6k/m** at peak scale, when we'd produce 2 videos/day (1-3min. videos on avg). I reached **20 million views** / **10k followers** in \<3 months.
@@ -78,7 +82,7 @@ My first project, a [discord bot](https://files.catbox.moe/smyfx9.png) reaching 
 
 <br>
 <br>
-I'm 17, from Monte Vista High School in Danville, CA. 
+I'm {age}, from Monte Vista High School in Danville, CA. 
 
 {@render link('mailto:devin78988@gmail.com?subject="Yo"', 'email')}
 {@render link('https://drive.google.com/file/d/1Cx8HyMquZUT6k-UqQgiX_r6jB0y1GLRr/view?usp=sharing', 'resume')}
