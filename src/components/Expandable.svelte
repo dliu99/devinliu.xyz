@@ -11,7 +11,7 @@
     <span>{time}</span>
   </button>
   {#if expanded === name}
-    <div class="text-neutral-400 text-sm mt-2 text-left prose prose-sm prose-invert prose-p:my-2 prose-ul:my-2 prose-li:my-0 prose-a:text-neutral-300">
+    <div class="text-neutral-400 text-xs mt-2 text-left prose prose-sm prose-invert prose-p:my-2 prose-ul:my-2 prose-li:my-0 prose-a:text-neutral-300">
       {@render children()}
     </div>
   {/if}

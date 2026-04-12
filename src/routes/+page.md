@@ -13,18 +13,25 @@
   });
 </script>
 
-<div class="bg-slate-800 min-h-dvh min-w-screen flex justify-center px-4 pt-4 pb-[calc(1rem+env(safe-area-inset-bottom))] sm:px-6 sm:pt-4">
-  <div class="flex flex-col justify-between w-full max-w-[400px] text-neutral-200 text-center">
-    <div class="pt-[4vh] sm:pt-[6vh]">
-<div class="font-black">
+<div class="bg-slate-800 min-h-dvh min-w-screen flex justify-center px-4 pt-[8vh] pb-[calc(8vh+env(safe-area-inset-bottom))] sm:px-6 sm:pt-[10vh] sm:pb-[10vh]">
+  <div class="flex flex-col justify-between w-full max-w-[480px] text-neutral-200 text-left">
+    <div class="pt-[2vh] sm:pt-[3vh]">
+<div class="font-black text-xl sm:text-xl leading-none">
 
-# DEVIN LIU
+DEVIN LIU
 
 </div>
-<div class="flex flex-col gap-4 pt-8 sm:pt-10">
-<Expandable name="GRADECOW" time="NOW" bind:expanded>
+<div class="pt-3 text-sm sm:text-sm text-neutral-400 prose prose-sm prose-invert prose-a:text-neutral-300 prose-p:my-2">
 
-I reverse engineered my school's LMS (infinite campus) since there's no publicly available API or persistent auth and built a **[React Native app](https://github.com/dliu99/gradecow-app)** around it. Awaiting App Store approval...
+I'm **{age}**, from Danville, California. I'm interested in **geopolitics, history, health, tech, and business**.
+As a result I spend a good amount of time on X, Wikipedia, and occasionally some real journalism like the Financial Times. 
+
+In my free time I like weightlifting, hanging out with friends, reading, etc etc. I'm always down to meet new people, try new things and explore new places -- so feel free to connect!
+</div>
+<div class="flex flex-col gap-3 pt-6 sm:pt-7">
+<Expandable name="MARKS" time="NOW" bind:expanded>
+
+I reverse engineered my school's LMS (infinite campus) since there's no publicly available API or persistent auth and built a **[React Native app](https://github.com/dliu99/marks-app)** around it. Awaiting App Store approval...
 
 </Expandable>
 
@@ -69,7 +76,7 @@ My first project, a [discord bot](https://files.catbox.moe/smyfx9.png) reaching 
 </div>
     </div>
 
-<div class="text-xs">
+<div class="text-xs text-center">
 {#if data}
 {#await data then commits}
   {@const d = new Date(commits[0].commit.committer.date)}
@@ -82,8 +89,6 @@ My first project, a [discord bot](https://files.catbox.moe/smyfx9.png) reaching 
 
 <br>
 <br>
-I'm {age}, from Monte Vista High School in Danville, CA. 
-
 {@render link('mailto:devin78988@gmail.com?subject="Yo"', 'email')}
 {@render link('https://drive.google.com/file/d/1Cx8HyMquZUT6k-UqQgiX_r6jB0y1GLRr/view?usp=sharing', 'resume')}
 {@render link('https://github.com/dliu99', 'github')}
