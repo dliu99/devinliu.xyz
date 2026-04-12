@@ -29,7 +29,12 @@ As a result I spend a good amount of time on X, Wikipedia, and occasionally some
 In my free time I like weightlifting, hanging out with friends, reading, etc etc. I'm always down to meet new people, try new things and explore new places -- so feel free to connect!
 </div>
 <div class="flex flex-col gap-3 pt-6 sm:pt-7">
-<Expandable name="MARKS" time="NOW" bind:expanded>
+<Expandable name="Caddy (YC F25)" time="ONGOING" bind:expanded>
+
+Incoming Summer 2026 in NYC!!
+
+</Expandable>
+<Expandable name="Marks app" time="ONGOING" bind:expanded>
 
 I reverse engineered my school's LMS (infinite campus) since there's no publicly available API or persistent auth and built a **[React Native app](https://github.com/dliu99/marks-app)** around it. Awaiting App Store approval...
 
@@ -37,7 +42,7 @@ I reverse engineered my school's LMS (infinite campus) since there's no publicly
 
 
 
-<Expandable name="HACKATHONS" time="NOW" bind:expanded>
+<Expandable name="Hackathons" time="ONGOING" bind:expanded>
 
 I've won at 5/7 hackathons in/around SF. Some favorites are:
 
@@ -49,18 +54,18 @@ I've won at 5/7 hackathons in/around SF. Some favorites are:
 </div>
 
 </Expandable>
-<Expandable name="STANG HACKS" time="2026" bind:expanded>
+<Expandable name="Stang hacks" time="2026" bind:expanded>
 
 I founded my **[school's first hackathon](https://stanghacks.com)** with ~200 participants/456 signups, $1.5k cash prizes, and sponsors including Vercel, ElevenLabs, Vapi, and more.
 
 </Expandable>
-<Expandable name="TIKTOK CPB" time="2024" bind:expanded>
+<Expandable name="TikTok cpb" time="2024" bind:expanded>
 
 I ran a meme page on TikTok with a team of 3. It made **$6k/m** at peak scale, when we'd produce 2 videos/day (1-3min. videos on avg). I reached **20 million views** / **10k followers** in \<3 months.
 
 </Expandable>
 
-<Expandable name="TIKTOK SHOP" time="2023" bind:expanded>
+<Expandable name="TikTok shop" time="2023" bind:expanded>
 
 I ran some oddball dropshipping stores on Shopify/Etsy/TikTok Shop since I was 13 with varying levels of profitability.
 
@@ -68,7 +73,7 @@ Before getting banned off TikTok Shop, I was doing **$3k/m**, worked with massiv
 
 </Expandable>
 
-<Expandable name="DISCORD BOTS" time="2021" bind:expanded>
+<Expandable name="Discord bots" time="2021" bind:expanded>
 
 My first project, a [discord bot](https://files.catbox.moe/smyfx9.png) reaching ~550 servers and 15,000 users.
 
