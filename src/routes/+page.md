@@ -31,12 +31,12 @@ In my free time I like weightlifting, hanging out with friends, reading, etc etc
 <div class="flex flex-col gap-3 pt-6 sm:pt-7">
 <Expandable name="Caddy (YC F25)" time="ONGOING" bind:expanded>
 
-Incoming Summer 2026 in NYC!!
+Incoming Summer 2026 in NYC
 
 </Expandable>
 <Expandable name="Marks app" time="ONGOING" bind:expanded>
 
-I reverse engineered my school's LMS (infinite campus) since there's no publicly available API or persistent auth and built a **[React Native app](https://github.com/dliu99/marks-app)** around it. Awaiting App Store approval...
+I reverse engineered my school's LMS (infinite campus) since there's no publicly available API or persistent auth and built a **[React Native app](https://apps.apple.com/us/app/marks-for-infinite-campus/id6761805541)** around it.
 
 </Expandable>
 
