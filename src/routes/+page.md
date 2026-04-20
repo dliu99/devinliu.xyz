@@ -13,7 +13,7 @@
   });
 </script>
 
-<div class="bg-slate-800 min-h-dvh min-w-screen flex justify-center px-4 pt-[8vh] pb-[calc(8vh+env(safe-area-inset-bottom))] sm:px-6 sm:pt-[10vh] sm:pb-[10vh]">
+<div class="bg-slate-800 min-h-dvh min-w-screen flex justify-center px-4 pt-16 pb-6 sm:px-6 sm:pt-12 sm:pb-10">
   <div class="flex flex-col justify-between w-full max-w-[480px] text-neutral-200 text-left">
     <div class="pt-[2vh] sm:pt-[3vh]">
 <div class="font-black text-xl sm:text-xl leading-none">
