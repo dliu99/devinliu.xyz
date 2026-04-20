@@ -97,6 +97,7 @@ My first project, a [discord bot](https://files.catbox.moe/smyfx9.png) reaching 
 {@render link('https://drive.google.com/file/d/1Cx8HyMquZUT6k-UqQgiX_r6jB0y1GLRr/view?usp=sharing', 'resume')}
 {@render link('https://github.com/dliu99', 'github')}
 {@render link('https://www.linkedin.com/in/devin-liu-6aa1b9325/', 'linkedin')}
+{@render link('https://x.com/devinliu420','x')}
 {@render link('https://instagram.com/devin78988', 'ig')}
 {@render link('https://tiktok.com/@devin78988', 'tt')}
 </div>
