@@ -23,10 +23,9 @@ DEVIN LIU
 </div>
 <div class="pt-3 text-sm sm:text-sm text-neutral-400 prose prose-sm prose-invert prose-a:text-neutral-300 prose-p:my-2">
 
-I'm **{age}**, from Danville, California. I'm interested in **geopolitics, history, health, tech, and business**.
-As a result I spend a good amount of time on X, Wikipedia, and occasionally some real journalism like the Financial Times. 
+Hi! I'm **{age}**, from Danville, California. I'm interested in computers, politics, maps, and money.
 
-In my free time I like weightlifting, hanging out with friends, reading, etc etc. I'm always down to meet new people, try new things and explore new places -- so feel free to connect!
+In my free time I like lifting, hanging out with friends, reading, etc etc. I'm always starting new projects and learning more about the world.
 </div>
 <div class="flex flex-col gap-3 pt-6 sm:pt-7">
 <Expandable name="Caddy (YC F25)" time="ONGOING" bind:expanded>
@@ -61,15 +60,15 @@ I founded my **[school's first hackathon](https://stanghacks.com)** with ~200 pa
 </Expandable>
 <Expandable name="TikTok cpb" time="2024" bind:expanded>
 
-I ran a meme page on TikTok with a team of 3. It made **$6k/m** at peak scale, when we'd produce 2 videos/day (1-3min. videos on avg). I reached **20 million views** / **10k followers** in \<3 months.
+I ran a meme page on TikTok with a team of 3. It made **$6k/m** at peak scale, when we'd produce 2 videos/day (1-3min. videos on avg). I reached 20 million views / 10k followers in \<3 months.
 
 </Expandable>
 
 <Expandable name="TikTok shop" time="2023" bind:expanded>
 
-I ran some oddball dropshipping stores on Shopify/Etsy/TikTok Shop since I was 13 with varying levels of profitability.
+I ran some oddball ecom stores on Shopify/Etsy/TikTok Shop since I was 13 with varying levels of profitability (~10k/m).
 
-Before getting banned off TikTok Shop, I was doing **$3k/m**, worked with massive affiliates in the space, and **built+sold a CLI tool in Python** automating outreach to affiliates via TikTok's internal API.
+Before getting banned off TikTok Shop, I was doing **$3k/m**, worked with massive affiliates in the space, and built+sold a CLI tool in Python automating outreach to affiliates via TikTok's internal API.
 
 </Expandable>
 
