@@ -7,7 +7,7 @@
 
 <Expandable name="Caddy (YC F25)" time="ONGOING" bind:expanded>
 
-Incoming Summer 2026 in NYC
+I worked on rebuilding Caddy's agent stack, the main onboarding flow, eval + memory/skills infrastructure, and shipping consumer features across the agent. See some of my work [here](https://caddy.app/fit) and in the iMessage app!
 
 </Expandable>
 
@@ -19,10 +19,11 @@ I reverse engineered my school's LMS (infinite campus) since there's no publicly
 
 <Expandable name="Hackathons" time="ONGOING" bind:expanded>
 
-I've won at 5/7 hackathons in/around SF. Some favorites are:
+I've won at 6/8 hackathons in/around SF and NYC. Some favorites are:
 
 <div class="text-sm">
 
+- NY Tech Week Hackathon - I built a git hook, CLI, and web interface that quizzes you on understanding of your AI-generated PRs. We ended up winning $1k from Perseus Computer because I found their internal endpoint for codebase indexing and used it for our project!
 - Lindy x E2B x Anthropic AI Agents Hackathon - I built an agent using Claude 4.5 Sonnet and E2B Computer Use to scrape FB Marketplace for deals and **lowball the seller based on the their job title on LinkedIn**. Won 1st Place/$2000.
 - [Cal Hacks '25](https://devpost.com/software/dialsense) - MCP server for Poke, allowing you to make calls using a cloned AI voice and schedule appointments with just a text
 
