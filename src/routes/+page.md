@@ -1,105 +1,11 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
-  import Expandable from '../components/Expandable.svelte';
-  let data = $state<Promise<any> | null>(null);
-  let expanded = $state<string | null>(null);
-  const age = ((d,t=new Date()) => t.getFullYear()-d.getFullYear()-(t.getMonth()<d.getMonth()||(t.getMonth()===d.getMonth()&&t.getDate()<d.getDate())))(new Date("2008-03-21"));
-
-  onMount(() => {
-    
-    data = fetch('https://api.github.com/repos/dliu99/devinliu.xyz/commits?per_page=1')
-      .then((r) => r.json());
-    
-  });
+  import { age } from '$lib';
 </script>
 
-<div class="bg-slate-800 min-h-dvh min-w-screen flex justify-center px-4 pt-16 pb-6 sm:px-6 sm:pt-12 sm:pb-10">
-  <div class="flex flex-col justify-between w-full max-w-[480px] text-neutral-200 text-left">
-    <div class="pt-[2vh] sm:pt-[3vh]">
-<div class="font-black text-xl sm:text-xl leading-none">
+Hi! I'm Devin, from Danville, California. 
 
-DEVIN LIU
+Right now, I'm a freshman studying Computer Engineering at UC Santa Barbara.
 
-</div>
-<div class="pt-3 text-sm sm:text-sm text-neutral-400 prose prose-sm prose-invert prose-a:text-neutral-300 prose-p:my-2">
+I'm interested in ai, politics, history, geography, startups, philosophy, and health. In my free time I [play map games](https://trackerfront.com/profile/87354b38), lift, and read. I'm always starting new projects and learning more about the world.
 
-Hi! I'm **{age}**, from Danville, California. I'm interested in computers, politics, maps, and money.
-
-In my free time I like lifting, hanging out with friends, reading, etc etc. I'm always starting new projects and learning more about the world.
-</div>
-<div class="flex flex-col gap-3 pt-6 sm:pt-7">
-<Expandable name="Caddy (YC F25)" time="ONGOING" bind:expanded>
-
-Incoming Summer 2026 in NYC
-
-</Expandable>
-<Expandable name="Marks app" time="ONGOING" bind:expanded>
-
-I reverse engineered my school's LMS (infinite campus) since there's no publicly available API or persistent auth and built a **[React Native app](https://apps.apple.com/us/app/marks-for-infinite-campus/id6761805541)** around it.
-
-</Expandable>
-
-
-
-<Expandable name="Hackathons" time="ONGOING" bind:expanded>
-
-I've won at 5/7 hackathons in/around SF. Some favorites are:
-
-<div class="text-xs">
-
-- Lindy x E2B x Anthropic AI Agents Hackathon - I built an agent using Claude 4.5 Sonnet and E2B Computer Use to scrape FB Marketplace for deals and **lowball the seller based on the their job title on LinkedIn**. Won 1st Place/$2000.
-- [Cal Hacks '25](https://devpost.com/software/dialsense) - MCP server for Poke, allowing you to make calls using a cloned AI voice and schedule appointments with just a text
-
-</div>
-
-</Expandable>
-<Expandable name="Stang hacks" time="2026" bind:expanded>
-
-I founded my **[school's first hackathon](https://stanghacks.com)** with ~200 participants/456 signups, $1.5k cash prizes, and sponsors including Vercel, ElevenLabs, Vapi, and more.
-
-</Expandable>
-<Expandable name="TikTok cpb" time="2024" bind:expanded>
-
-I ran a meme page on TikTok with a team of 3. It made **$6k/m** at peak scale, when we'd produce 2 videos/day (1-3min. videos on avg). I reached 20 million views / 10k followers in \<3 months.
-
-</Expandable>
-
-<Expandable name="TikTok shop" time="2023" bind:expanded>
-
-I ran some oddball ecom stores on Shopify/Etsy/TikTok Shop since I was 13 with varying levels of profitability (~10k/m).
-
-Before getting banned off TikTok Shop, I was doing **$3k/m**, worked with massive affiliates in the space, and built+sold a CLI tool in Python automating outreach to affiliates via TikTok's internal API.
-
-</Expandable>
-
-<Expandable name="Discord bots" time="2021" bind:expanded>
-
-My first project, a [discord bot](https://files.catbox.moe/smyfx9.png) reaching ~550 servers and 15,000 users.
-
-</Expandable>
-</div>
-    </div>
-
-<div class="text-xs text-center">
-{#if data}
-{#await data then commits}
-  {@const d = new Date(commits[0].commit.committer.date)}
-  UPDATED {d.toLocaleString('en-AU', { day: 'numeric', month: 'short', year: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/Los_Angeles' }).toUpperCase()} PT
-{/await}
-{/if}
-{#snippet link(href: string, label: string)}
-<a {href} target="_blank" rel="noopener noreferrer" class="hover:underline">[{label}]</a>
-{/snippet}
-
-<br>
-<br>
-{@render link('mailto:devin78988@gmail.com?subject="Yo"', 'email')}
-{@render link('https://drive.google.com/file/d/1Cx8HyMquZUT6k-UqQgiX_r6jB0y1GLRr/view?usp=sharing', 'resume')}
-{@render link('https://github.com/dliu99', 'github')}
-{@render link('https://www.linkedin.com/in/devin-liu-6aa1b9325/', 'linkedin')}
-{@render link('https://x.com/devinliu420','x')}
-{@render link('https://instagram.com/devin78988', 'ig')}
-{@render link('https://tiktok.com/@devin78988', 'tt')}
-</div>
-</div>
-</div>
+In the [past](/past), I worked on consumer personal AI agents at Caddy, built an app for high school students, and ran many questionable online money schemes. Pre-LLM, my very first projects were Roblox cheats and Discord bots.

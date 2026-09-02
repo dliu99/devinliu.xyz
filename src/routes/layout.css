@@ -1,15 +1,52 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
+/* the only colors on the site — everything else references these */
+:root,
+[data-theme='dark'] {
+  --bg: #17171a;
+  --fg: #f2f0ec;
+  --muted: #c4c4c0;
+}
+
+[data-theme='light'] {
+  --bg: #f2f0ec;
+  --fg: #17171a;
+  --muted: #3b3b3d;
+}
+
+/* Jost — variable 300..700, latin subset. SIL OFL. */
 @font-face {
-  font-family: 'Departure Mono';
-  src: url('/DepartureMono-Regular.woff2') format('woff2'),
-       url('/DepartureMono-Regular.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Jost';
+  src: url('/Jost-Variable.woff2') format('woff2');
+  font-weight: 300 700;
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  font-family: 'Departure Mono', monospace;
+  font-family: 'Jost', Futura, 'Century Gothic', system-ui, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* prose inherits the same two tones instead of tailwind's own palette */
+.prose {
+  --tw-prose-body: var(--muted);
+  --tw-prose-headings: var(--fg);
+  --tw-prose-bold: var(--fg);
+  --tw-prose-links: var(--fg);
+  --tw-prose-bullets: var(--muted);
+  --tw-prose-counters: var(--muted);
+  --tw-prose-quotes: var(--fg);
+  --tw-prose-code: var(--fg);
+  --tw-prose-hr: var(--muted);
+  font-weight: 300;
+}
+
+/* weight, not color, is what separates levels here */
+.prose :is(strong, b) {
+  font-weight: 600;
 }
