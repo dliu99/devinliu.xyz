@@ -27,7 +27,12 @@
 <div class="min-h-dvh flex justify-center px-4 pt-16 pb-6 sm:px-6 sm:pt-12 sm:pb-10">
 	<div class="flex flex-col justify-between w-full max-w-[540px] text-left">
 		<div class="pt-[2vh] sm:pt-[3vh] prose prose-base prose-p:my-3 max-w-none">
-			<div class="font-bold text-2xl leading-none tracking-wide">DEVIN LIU</div>
+			<a
+				href="/"
+				class="inline-block font-bold text-2xl leading-none tracking-wide text-[var(--fg)] no-underline hover:underline"
+			>
+				DEVIN LIU
+			</a>
 			{@render children()}
 		</div>
 
