@@ -66,7 +66,7 @@
 			{/if}
 			{@render link('mailto:devin78988@gmail.com?subject="Yo"', 'email')}
 			{@render link(
-				'https://drive.google.com/file/d/1Cx8HyMquZUT6k-UqQgiX_r6jB0y1GLRr/view?usp=sharing',
+				'https://drive.google.com/file/d/1EUfbOOTQ5WQKGmnXFB57Z9tBWbAPKX60/view?usp=sharing',
 				'resume'
 			)}
 			{@render link('https://github.com/dliu99', 'github')}
