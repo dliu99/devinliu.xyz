@@ -8,6 +8,16 @@
 	let data = $state<Promise<any> | null>(null);
 	let theme = $state('dark');
 
+	let nav = $derived.by(() => {
+		if (page.url.pathname === '/') {
+			return [
+				['/past', 'past'],
+				['/blog', 'blog']
+			];
+		}
+		return [[page.url.pathname.startsWith('/blog/') ? '/blog' : '/', 'back']];
+	});
+
 	onMount(() => {
 		theme = document.documentElement.dataset.theme ?? 'dark';
 		data = fetch('https://api.github.com/repos/dliu99/devinliu.xyz/commits?per_page=1').then((r) =>
@@ -34,6 +44,11 @@
 				DEVIN LIU
 			</a>
 			{@render children()}
+			<p class="not-prose flex gap-3 mt-3 text-[var(--subtle)]">
+				{#each nav as [href, label]}
+					<a {href} class="hover:underline">[{label}]</a>
+				{/each}
+			</p>
 		</div>
 
 		<div class="text-sm text-center text-[var(--muted)] pt-10">
@@ -59,11 +74,6 @@
 
 			<br />
 			<br />
-			{#if page.url.pathname === '/'}
-				<a href="/past" class="hover:underline">[past]</a>
-			{:else}
-				<a href="/" class="hover:underline">[home]</a>
-			{/if}
 			{@render link('mailto:devin78988@gmail.com?subject="Yo"', 'email')}
 			{@render link(
 				'https://drive.google.com/file/d/1EUfbOOTQ5WQKGmnXFB57Z9tBWbAPKX60/view?usp=sharing',
