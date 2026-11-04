@@ -8,11 +8,15 @@
 	let data = $state<Promise<any> | null>(null);
 	let theme = $state('dark');
 
-	const nav = [
-		['/', 'home'],
-		['/past', 'past'],
-		['/blog', 'blog']
-	];
+	let nav = $derived.by(() => {
+		if (page.url.pathname === '/') {
+			return [
+				['/past', 'past'],
+				['/blog', 'blog']
+			];
+		}
+		return [[page.url.pathname.startsWith('/blog/') ? '/blog' : '/', 'back']];
+	});
 
 	onMount(() => {
 		theme = document.documentElement.dataset.theme ?? 'dark';
@@ -40,9 +44,9 @@
 				DEVIN LIU
 			</a>
 			{@render children()}
-			<p class="not-prose italic text-[var(--subtle)] flex gap-3 mt-3">
-				{#each nav.filter(([href]) => href !== page.url.pathname) as [href, label]}
-					<a {href} class="underline hover:text-[var(--fg)]">{label}</a>
+			<p class="not-prose flex gap-3 mt-3 text-[var(--subtle)]">
+				{#each nav as [href, label]}
+					<a {href} class="hover:underline">[{label}]</a>
 				{/each}
 			</p>
 		</div>
