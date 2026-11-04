@@ -7,12 +7,14 @@
   --bg: #17171a;
   --fg: #f2f0ec;
   --muted: #c4c4c0;
+  --subtle: #9a9a96;
 }
 
 [data-theme='light'] {
   --bg: #f2f0ec;
   --fg: #17171a;
   --muted: #3b3b3d;
+  --subtle: #3b3b3d;
 }
 
 /* Jost — variable 300..700, latin subset. SIL OFL. */
