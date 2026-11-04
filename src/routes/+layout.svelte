@@ -61,8 +61,12 @@
 			<br />
 			{#if page.url.pathname === '/'}
 				<a href="/past" class="hover:underline">[past]</a>
+				<a href="/blog" class="hover:underline">[blog]</a>
 			{:else}
 				<a href="/" class="hover:underline">[home]</a>
+				{#if page.url.pathname.startsWith('/blog/')}
+					<a href="/blog" class="hover:underline">[blog]</a>
+				{/if}
 			{/if}
 			{@render link('mailto:devin78988@gmail.com?subject="Yo"', 'email')}
 			{@render link(

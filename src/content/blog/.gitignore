@@ -1,0 +1,4 @@
+# keep the shared vault settings, ignore the rest of Obsidian's per-device state
+.obsidian/*
+!.obsidian/app.json
+.trash/
