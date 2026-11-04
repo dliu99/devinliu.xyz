@@ -6,7 +6,7 @@ Hi! I'm Devin, from Danville, California.
 
 Right now, I'm a freshman studying Computer Engineering at UC Santa Barbara. Recently I've been learning about reinforcement learning in robotics.
 
-In the [past](/past), I worked on personal agents, built an app for high school students, and ran many odd online money schemes. Pre-LLM, my very first projects were Roblox cheats and Discord bots.
+In the [past](/past), I worked on personal agents, built an app for high school students, hosted a hackathon, and ran many odd online money schemes. Pre-LLM, my very first projects were Roblox cheats and Discord bots.
 
 I'm interested in ai, politics, history, geography, startups, philosophy, and health. In my free time I [play map games](https://trackerfront.com/profile/87354b38), lift, and read.
 
