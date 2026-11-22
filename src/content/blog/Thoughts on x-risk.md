@@ -3,7 +3,7 @@ description: A short essay on gradual disempowerment
 date: 2026-11-16
 title: Thoughts on x-risk/AI safety
 ---
-The following is part of my application for [Swan Fellows](https://swanfellows.com/), a fellowship for founders in AI safety. I'm still working on my writing, so do let me know if you loved or hated it :)
+The following is part of my application for [Swan Fellows](https://swanfellows.com/), a fellowship for founders in AI safety:
 
 
 *Tell us what risks in AI safety you care most about.*
